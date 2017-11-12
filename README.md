@@ -13,15 +13,15 @@ Lets explored the SBC/DemoBoard rock64
 - (Link)[http://files.pine64.org/doc/rock64/ROCK64_Schematic_v2.0_20170704.pdf]
 
 # Connect via SERIAL CONSOLE
-## Device : PADI Serial console
+- Device : PADI Serial console
     - PADI Serial console powered by CH340G chipset enabled simple USB to Serial communication between PC and PADI IoT Stamp or ROCK64 for development. 
 - Found in the rock64 store works fine
 - (PADI Serial console)[https://www.pine64.org/?product=padi-serial-console]
 - !!!!Attention!!! Please be sure you switch the serial console of 3,3 Volt before you connect this with the board   
-## Pin Layout 
-(Pinout)[http://files.pine64.org/doc/rock64/ROCK64_Pi-2%20_and_Pi_P5+_Bus.pdf]
-- we use the pin 6 (GND) 8(TX) 10(RX) from the Pi-2 Bus pin header 
-## Command for minicom, console on ttyUSB0 and 1,5M baudrate
+- Pin Layout 
+  (Pinout)[http://files.pine64.org/doc/rock64/ROCK64_Pi-2%20_and_Pi_P5+_Bus.pdf]
+    - we use the pin 6 (GND) 8(TX) 10(RX) from the Pi-2 Bus pin header 
+- Command for minicom, console on ttyUSB0 and 1,5M baudrate
  - ```minicom -b 1500000 /dev/ttyUSB0 --device /dev/ttyUSB1 ```
  - minicom version 2.7 (compiled Feb  7 2016)
 
@@ -36,7 +36,7 @@ Lets explored the SBC/DemoBoard rock64
 
 
 # Speed test
-##mem
+[ ] mem
 ##cpu
 ##sd card
 ##emmc
