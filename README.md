@@ -47,6 +47,9 @@ Lets explored the SBC/DemoBoard rock64
 
 # Link
 
+# rock64_install_to_emmc.sh
+(Link)[https://forum.pine64.org/showthread.php?tid=4936]
+
 ##rockchip MALI driver
 (Link)[https://github.com/rockchip-linux/libmali/tree/rockchip/debian]
 
