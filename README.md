@@ -16,10 +16,7 @@ Lets explored the SBC/DemoBoard rock64
 - (PADI Serial console)[https://www.pine64.org/?product=padi-serial-console]   
 - Command for minicom, console on ttyUSB0 and 1,5M baudrate
  - ```minicom -b 1500000 /dev/ttyUSB0 --device /dev/ttyUSB1 ```
-- minicom version 
- - ``` minicom --version
-minicom version 2.7 (compiled Feb  7 2016)
-Copyright (C) Miquel van Smoorenburg. ```
+- minicom version 2.7 (compiled Feb  7 2016)
 
 
 # GitHub Markdown
