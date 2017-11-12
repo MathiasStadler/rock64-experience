@@ -19,5 +19,14 @@ Lets explored the SBC/DemoBoard rock64
 - minicom version 2.7 (compiled Feb  7 2016)
 
 
+# images & passwd
+[images](http://wiki.pine64.org/index.php/ROCK64_Main_Page)
+
+
+
+# EMMC boot from EMMC tutorial
+- [Link](https://forum.pine64.org/showthread.php?tid=4924)
+- Test with a 64GB emmc on the 4GB version works perfect
+
 # GitHub Markdown
 [Markdown](https://guides.github.com/features/mastering-markdown/)
