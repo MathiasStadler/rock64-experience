@@ -56,6 +56,8 @@ Lets explored the SBC/DemoBoard rock64
 
 
 # Article 
+
+- [cnx-software ROCK64 Quickstart Part 1](https://www.cnx-software.com/2017/07/16/rock64-board-review-part-1-emmc-flash-module-android-7-1-firmware-benchmarks-and-kodi/)
 - [cnx-software ROCK64 Quickstart Part 2](https://www.cnx-software.com/2017/08/07/rock64-board-review-part-2-quick-start-guide-with-ubuntu-16-04-3-mate-multimedia-features-some-benchmarks/)
 
 
