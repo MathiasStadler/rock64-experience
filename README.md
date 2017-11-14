@@ -49,14 +49,14 @@ Lets explored the SBC/DemoBoard rock64
 # Link
 
 # rock64_install_to_emmc.sh
-(Link)[https://forum.pine64.org/showthread.php?tid=4936]
+[Link](https://forum.pine64.org/showthread.php?tid=4936)
 
 ##rockchip MALI driver
-(Link)[https://github.com/rockchip-linux/libmali/tree/rockchip/debian]
+[Link](https://github.com/rockchip-linux/libmali/tree/rockchip/debian)
 
 
 # Article 
-- (cnx-software)[https://www.cnx-software.com/2017/08/07/rock64-board-review-part-2-quick-start-guide-with-ubuntu-16-04-3-mate-multimedia-features-some-benchmarks/]
+- [cnx-software ROCK64 Quickstart Part 2](https://www.cnx-software.com/2017/08/07/rock64-board-review-part-2-quick-start-guide-with-ubuntu-16-04-3-mate-multimedia-features-some-benchmarks/)
 
 
 # Distributions
