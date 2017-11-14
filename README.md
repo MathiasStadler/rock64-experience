@@ -31,6 +31,7 @@ Lets explored the SBC/DemoBoard rock64
 # EMMC boot from EMMC tutorial
 - [Link](https://forum.pine64.org/showthread.php?tid=4924)
 - Test with a 64GB emmc on the 4GB version works perfect
+- i'm used the way 7a => direct copy to emmc
 
 # check clock frequency 
 
@@ -55,7 +56,7 @@ Lets explored the SBC/DemoBoard rock64
 
 
 # Article 
-- cnx-software
+- (cnx-software)[https://www.cnx-software.com/2017/08/07/rock64-board-review-part-2-quick-start-guide-with-ubuntu-16-04-3-mate-multimedia-features-some-benchmarks/]
 
 
 # Distributions
