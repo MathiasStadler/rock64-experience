@@ -66,3 +66,22 @@ Lets explored the SBC/DemoBoard rock64
 
 # GitHub Markdown
 [Markdown](https://guides.github.com/features/mastering-markdown/)
+
+
+# erase emmc
+(Link)[ https://forum.pine64.org/showthread.php?tid=5358]
+
+- inside u-boot menu
+```mmc erase 0 1000 ```
+- then
+``` boot ```
+- board should boot from sd
+
+# sd burning / copy image
+- (etcher)[https://etcher.io/] 
+- ``` sudo dd bs=1M if=xenial-mate-rock64-0.5.10-118-arm64.img of=/dev/sdb ```
+
+
+# Linux page table naming (PGD, PUD, PMD, PTE) 
+- PGD -> PUD -> PMD -> PTE
+- PGD: Page Global Directory PUD: Page Upper Directory PMD: Page Mid-level Directory PTE: page table entry
