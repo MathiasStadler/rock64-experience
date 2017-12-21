@@ -29,10 +29,10 @@ if [[ $# -ne 1 ]] && [[ $# -ne 2 ]]; then
    usage
 fi
 
-if [[ ! -d /sys/devices/soc.0/1c10000.sdmmc/mmc_host/mmc1 ]]; then
-   echo "You should boot from SD card"
-   exit 1
-fi
+#if [[ ! -d /sys/devices/soc.0/1c10000.sdmmc/mmc_host/mmc1 ]]; then
+#   echo "You should boot from SD card"
+#   exit 1
+#fi
 
 if [[ ! -e /dev/mmcblk1 ]]; then
    echo "You should boot from SD card"
@@ -95,11 +95,11 @@ done
 echo ""
 echo "Using $DOWNLOAD_URL..."
 echo "Umounting..."
-umount -f /dev/mmcblk1* || true
+umount -f /dev/mmcblk0* || true
 echo ""
 
-echo "Downloading and writing to /dev/mmcblk1..."
-curl -L -f "$DOWNLOAD_URL" | $ARCHIVER | dd bs=30M of=/dev/mmcblk1
+echo "Downloading and writing to /dev/mmcblk0..."
+curl -L -f "$DOWNLOAD_URL" | $ARCHIVER | dd bs=30M of=/dev/mmcblk0
 sync
 echo ""
 

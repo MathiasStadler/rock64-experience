@@ -77,6 +77,27 @@ Lets explored the SBC/DemoBoard rock64
 ``` boot ```
 - board should boot from sd
 
+
+
+# uboot Resetting to default environment
+```=> env default -a ```
+``` Resetting to default environment ``` 
+
+
+#uboot unsorted
+
+- ```fatls mmc 1:1 ```
+- ```ext4ls mmc 1:2 boot```
+- ```setenv finduuid part uuid mmc 1:2 uuid```
+
+
+
+
+# information for  mmc
+- ```cat /sys/kernel/debug/mmc0/ios ```
+- ```cat /sys/kernel/debug/mmc1/ios  ```
+
+
 # sd burning / copy image
 - (etcher)[https://etcher.io/] 
 - ``` sudo dd bs=1M if=xenial-mate-rock64-0.5.10-118-arm64.img of=/dev/sdb ```
@@ -85,3 +106,83 @@ Lets explored the SBC/DemoBoard rock64
 # Linux page table naming (PGD, PUD, PMD, PTE) 
 - PGD -> PUD -> PMD -> PTE
 - PGD: Page Global Directory PUD: Page Upper Directory PMD: Page Mid-level Directory PTE: page table entry
+
+# temperature of soc
+- ```cat /sys/class/thermal/thermal_zone0/temp```
+- or
+- ```/sys/devices/virtual/thermal/thermal_zone0/temp```
+
+
+
+
+# overwrite emmc
+- ```dd if=/dev/zero of=/dev/mmcblk0 bs=1M status=progress```
+
+# copy images of emmc on the fley
+``` curl -L https://github.com/ayufan-rock64/linux-build/releases/download/0.6.1/xenial-mate-rock64-0.6.1-141-arm64.img.xz  |  unxz -c > /dev/mmcblk0 ```
+
+```curl -L  https://github.com/ayufan-rock64/linux-build/releases/download/0.6.1/xenial-minimal-rock64-0.6.1-141-arm64.img.xz |  unxz -c > /dev/mmcblk0 ```
+
+
+
+# speedtest 
+
+- create partion on ssd
+- make filesystem
+- mount partion
+- change to mountpoint
+- ``` iozone -e -I -a -s 100M -r 4k -r 16k -r 512k -r 1024k -r 16384k -i 0 -i 1 -i 2 ```
+
+- ```iozone -e -I -a -s 100M -r 4k -r 16k -r 512k -r 1024k -r 16384k -i 0 -i 1 -i 2 ```
+- ```iozone -l 1 -u 1 -F /mnt/test ```
+
+
+
+
+# overclocking
+- tool (StabilityTester)[https://github.com/ehoutsma/StabilityTester] 
+- fix cpumaxseed inside  the script
+
+
+
+# Networkspeed
+- iperf3
+- for this test need we a second device
+- install on both devices 
+- ``` apt install iperf3 ```
+- 1st device start iperf as server
+- ```iperf -s```
+- 2nd device start iperf as client
+- ``` iperf -c <IP of 1st device> ```
+- performance depending from cable, router and temperature of device
+
+
+
+# uboot version
+- U-Boot 2017.09-rc4-g22993de
+
+
+- U-Boot 2018.01-rc2-g81b716a (Dec 19 2017 - 22:24:02 +0000), Build: jenkins-lin7
+
+
+
+# Armbian
+- Download Link latest
+- (arbian latest rock64)[https://dl.armbian.com/rock64/Ubuntu_xenial_default_nightly.7z]
+
+- extract
+- ``` 7z -e <*7z>```
+- e.g. name of image
+- ```Armbian_5.34.171121_Rock64_Ubuntu_xenial_default_4.4.77.img```
+
+- copy to sd SD available on /dev/sdb 
+- ```dd if=Armbian_5.34.171121_Rock64_Ubuntu_xenial_default_4.4.77.img of=/dev/sdbDOUBLE_CHECK_BEFORE_RUN bs=1M status=progress
+```
+
+# copy img from sd (boot from) to emmc
+- ```dd if=Armbian_5.34.171121_Rock64_Ubuntu_xenial_default_4.4.77.img of=/dev/mmcblk0 bs=30M status=progress```
+
+
+
+
+
