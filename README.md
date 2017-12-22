@@ -185,4 +185,11 @@ Lets explored the SBC/DemoBoard rock64
 
 
 
+# usb stick boot
+- uboot start
+- uboot:  ums 0 mmc 1
+```UMS: LUN 0, dev 1, hwpart 0, sector 0x0, count 0x1da7800```
 
+
+# dts tutorial
+- (dtas tutorial)[https://saurabhsengarblog.wordpress.com/2015/11/28/device-tree-tutorial-arm/]
