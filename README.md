@@ -1,3 +1,4 @@
+
 # ENV
 - M92P 16GB
 - Ubuntu 16.04.3 LTS / xenial
@@ -193,3 +194,35 @@ Lets explored the SBC/DemoBoard rock64
 
 # dts tutorial
 - (dtas tutorial)[https://saurabhsengarblog.wordpress.com/2015/11/28/device-tree-tutorial-arm/]
+
+- more in detail
+- https://elinux.org/Device_Tree_presentations_papers_articles#linux_kernel_internals
+- https://elinux.org/images/d/dc/Elce_2017_dt_bof.pdf
+
+
+
+# arm structure
+- https://saurabhsengarblog.wordpress.com/2015/12/05/arm-architecture-basics/
+
+
+# How-To-compile-a-custom-Linux-kernel-for-your-ARM-device
+- https://github.com/umiddelb/armhf/wiki/How-To-compile-a-custom-Linux-kernel-for-your-ARM-device
+
+
+# multiloader
+- https://magazine.odroid.com/wp-content/uploads/ODROID-Magazine-201601.pdf
+
+#  new image thread
+- https://forum.pine64.org/showthread.php?tid=5043
+
+# https://github.com/ayufan-rock64/linux-u-boot
+- (Link)[https://github.com/ayufan-rock64/linux-u-boot]
+
+# red led flash slow
+- linux kernel is running
+
+
+# Flash_image
+- Rockchip provides a command line utility named "upgrade_tool"
+- http://wiki.t-firefly.com/index.php/Firefly-RK3288/Flash_image/en
+
